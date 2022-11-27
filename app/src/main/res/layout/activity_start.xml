@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    android:gravity="center|center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center|center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/start_title"
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:fontFamily="@font/bold"
+                android:gravity="center"
+                android:text="실시간 자세 인식 중입니다."
+                android:textColor="#002090"
+                android:textSize="34sp"
+                tools:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/main_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/medium"
+                android:gravity="center"
+                android:text="허리디스크와 거북목을 예방하기 위하여\n 항상 바른 자세를 유지해주세요."
+                android:textColor="#3E4C7B"
+                android:textSize="21dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50sp"
+            android:layout_marginBottom="50sp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/start_title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:gravity="center"
+                android:text="앉아있었던 시간"
+                android:textColor="#002090"
+                android:textSize="34sp"
+                tools:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="00:00:00"
+                android:textColor="#538EF4"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="249dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/start_buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/start2_btn_anal"
+                        android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/button_design"
+                        android:text="시작"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        tools:elevation="10dp"
+                        tools:fontFamily="@font/bold" />
+
+                    <Button
+                        android:id="@+id/start2_btn_home"
+                        android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="5sp"
+                        android:background="@drawable/button_design"
+                        android:text="일시 정지"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        tools:elevation="10dp"
+                        tools:fontFamily="@font/bold" />
+
+                    <Button
+                        android:id="@+id/start_btn_reset"
+                        android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="5sp"
+                        android:background="@drawable/button_design"
+                        android:text="초기화"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        tools:elevation="10dp"
+                        tools:fontFamily="@font/bold" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/start_btn_end"
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/button_design"
+                    android:text="종료"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    tools:elevation="10dp"
+                    tools:fontFamily="@font/bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

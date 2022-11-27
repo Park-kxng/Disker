@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    android:gravity="center|center_horizontal"
+    android:orientation="vertical"
+    tools:context=".startEndActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/start_title"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:fontFamily="@font/bold"
+            android:gravity="center"
+            android:text="자세 인식이 완료되었습니다."
+            android:textColor="#002090"
+            android:textSize="34sp"
+            tools:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/main_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/medium"
+            android:gravity="center"
+            android:text="오늘의 당신의 자세가 어땠는지 궁금하다면?"
+            android:textColor="#3E4C7B"
+            android:textSize="21dp" />
+
+        <LinearLayout
+            android:id="@+id/start_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/start2_btn_anal"
+                android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_design"
+                android:text="자세 분석 결과 보러가기"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                tools:elevation="10dp"
+                tools:fontFamily="@font/bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="right|center_vertical"
+            android:orientation="vertical"
+            tools:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/start2_btn_home"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_margin="5sp"
+                android:background="@drawable/button_design"
+                android:text="홈"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                tools:elevation="10dp"
+                tools:fontFamily="@font/bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

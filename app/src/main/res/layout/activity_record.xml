@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:gravity="center">
+
+
+    <LinearLayout
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/start_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:gravity="center"
+            android:text="나의 올바른 자세를\n설정합니다."
+            android:textColor="#002090"
+            android:textSize="28sp"
+            tools:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/main_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/medium"
+            android:gravity="center"
+            android:text="바른 자세를 취해주세요"
+            android:textColor="#3E4C7B"
+            android:textSize="20sp"
+            android:textStyle="normal|bold" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="251dp"
+            android:layout_height="316dp"
+            tools:layout_margin="20sp"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <Button
+            android:id="@+id/main_btn_start"
+            android:layout_width="200sp"
+            android:layout_height="100sp"
+            android:layout_margin="10sp"
+            android:background="@drawable/button_design"
+            android:fontFamily="@font/medium"
+            android:text="종료"
+            android:textColor="#999999"
+            android:textSize="34sp"
+            tools:elevation="30dp"
+            tools:paddingBottom="5sp"
+            tools:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>
